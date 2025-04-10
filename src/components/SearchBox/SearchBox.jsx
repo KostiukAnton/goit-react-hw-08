@@ -5,6 +5,7 @@ import { selectFilter } from "../../redux/filters/selectors";
 selectFilter;
 export default function SearchBox() {
   const dispatch = useDispatch();
+
   const filter = useSelector(selectFilter);
 
   const handleFilter = (e) => dispatch(changeFilter(e.target.value));
